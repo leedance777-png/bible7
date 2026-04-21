@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='48'%3E%F0%9F%93%96%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1>📖 Bible AI</h1>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite">
+      <section class="message-row bot-row">
+        <div class="avatar" aria-hidden="true">📖</div>
+        <div class="message bot-message">
+          안녕하세요. 사랑, 믿음, 용서에 대해 질문해 보세요.
+        </div>
+      </section>
+    </main>
+
+    <form id="chatForm" class="composer" autocomplete="off">
+      <div class="composer-inner">
+        <textarea
+          id="userInput"
+          rows="1"
+          placeholder="성경에 대해 질문하세요..."
+          aria-label="메시지 입력"
+        ></textarea>
+        <button id="sendButton" type="submit" aria-label="메시지 보내기">
+          <span>➤</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
